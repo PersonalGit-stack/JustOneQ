@@ -1,0 +1,126 @@
+.delius-swash-caps-regular {
+  font-family: "Delius Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    135deg,
+    #fff1f5,
+    #ffe4e6,
+    #fff7ed
+  );
+}
+
+.top-bar,
+.bottom-bar {
+  height: 64px;
+  background: linear-gradient(
+    135deg,
+    rgba(236, 72, 153, 0.25),
+    rgba(251, 113, 133, 0.25)
+  );
+  backdrop-filter: blur(10px);
+  color: #9d174d;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.play-area {
+  width: 100%;
+  max-width: 900px;
+  height: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+#card-title {
+  font-size: 1.75rem;
+}
+
+.main-card {
+  font-family: "Delius Swash Caps", cursive;
+  width: 480px;
+  height: 480px;
+  border-radius: 26px;
+  border: none;
+  box-shadow:
+    0 16px 42px rgba(0, 0, 0, 0.14);
+}
+
+.placeholder-img {
+  width: 200px;
+  opacity: 0.8;
+}
+
+.result-gif {
+  max-width: 300px;
+  border-radius: 12px;
+}
+
+.buttons-wrapper {
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* position: relative; */
+}
+
+
+.yes-btn:hover {
+  background-color: #db2777;
+}
+
+.yes-btn {
+  background: linear-gradient(135deg, #ec4899, #fb7185);
+  color: #fff;
+  margin-right: 36px; 
+  padding: 12px 34px;
+  border-radius: 999px;
+  border: none;
+  font-size: 1.05rem;
+  box-shadow: 0 6px 16px rgba(236, 72, 153, 0.35);
+  z-index: 2;
+}
+
+.no-btn {
+  background-color: #f1b5c8; 
+  color: #7a2944;
+  margin-left: 36px; 
+  padding: 12px 32px;
+  border-radius: 999px;
+  border: none;
+  font-size: 1.05rem;
+  position: relative;
+}
+
+/*Mobile */
+@media (max-width: 390px) {
+  .main-card {
+    width: 90%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .play-area {
+    height: auto;
+  }
+
+  .result-gif {
+    max-width: 200px;
+  }
+}
+
